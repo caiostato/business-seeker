@@ -7,9 +7,11 @@ By leveraging the new Google Places API, this tool filters out bad leads (like m
 ## ✨ Features
 - **Smart Filtering:** Automatically skips businesses that have an existing custom website.
 - **Social Media Detection:** Flags businesses using `facebook.com`, `linktr.ee`, `sites.google.com`, etc. as highly qualified leads.
+- **🎯 Brazilian CEP Search:** Integrated with ViaCEP to automatically resolve 8-digit postal codes into neighborhoods, cities, and formatted queries.
+- **💡 In-App Playbook & Examples:** Collapsible table featuring high-converting niches, sample queries, and franchise filters.
 - **Actionable UI:** A sleek, high-contrast dashboard to view, filter, and export leads.
 - **Customizable:** Exclude specific keywords (like franchises) or useless place types directly from the search bar.
-- **CSV Export:** Download your generated lead list with one click.
+- **CSV Export:** Download your generated lead list with sanitized filenames in one click.
 
 ---
 
@@ -55,6 +57,7 @@ The application will open automatically in your default web browser at `http://l
 ---
 
 ## 💡 Usage Tips
-- **Be Specific:** Instead of searching `"Restaurants in New York"`, search `"Restaurants near Broadway, NY"` to bypass Google's 60-result limit and find smaller, local businesses.
-- **Use Exclude Keywords:** If franchises keep popping up, add them to the "Exclude Keywords" input (e.g., `McDonalds, Starbucks`).
-- **Phone Numbers:** Leave "Require Phone Number" checked so you don't end up with dead-end leads.
+- **Use CEP Search (Brazil):** Switch to the CEP Search mode, type an 8-digit CEP (e.g., `01310-100`), select your niche, and let the app build the optimal hyper-local query.
+- **Target Neighborhoods (Bairros):** Searching by neighborhood (`Bairro`) offers the best balance of business density without being restricted to a single block.
+- **Use Exclude Keywords:** Filter out national franchises that pollute the results (e.g., `Drogasil, Raia, McDonald's, O Boticário, Subway, Casas Bahia`).
+- **Phone Numbers:** Leave "Require Phone Number" checked so you only retrieve actionable leads ready for direct cold outreach via phone or WhatsApp.
